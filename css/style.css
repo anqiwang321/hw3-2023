@@ -123,7 +123,7 @@ p {
     margin-right: 0px;
     margin-top: 0px;
     line-height: 1;
-    list-style-image: url(/images/sketchbook.png);
+    list-style-image: url(../images/sketchbook.png);
 }
 
 main{
