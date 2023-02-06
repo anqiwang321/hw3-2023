@@ -1,0 +1,132 @@
+body{
+   /* Set line spacing */
+   line-height: 2;
+}
+
+
+header, nav{
+    /* Set padding and margin */
+    padding: 10px 15px 20px 50px;
+    margin: 15px 20px 25px 50px;
+}
+
+nav ul li{
+    /* Set display, margin, padding, font-size, background-color */
+    display:inline;
+    padding: 20px 25px 30px 20px;
+    margin: 100px 130px 170px 30px;
+    font-size: 20px;
+    background-color: rgba(251, 231, 167, 0.845);
+}
+
+
+nav a{
+    /* Set text decoration*/
+    text-decoration: none;
+}
+
+a:visited{
+    /* Set color */
+    color:black;
+}
+
+nav a.current{
+    /* Set text decoration, transformation, and underline properties */
+    text-decoration:rgb(35, 37, 39) wavy underline;
+    text-transform: uppercase;
+    text-underline-offset: 16px; /* move that wavy line down a bit. */
+}
+
+
+h1{
+    /*Set font and font size*/
+    font-family: 'Merriweather', 'Anton', 'Times New Roman', 'serif'; 
+    font-size: 40px;
+}
+
+h2{
+    /*Set font, font size, and alignment*/
+    font-family: 'Anton', 'Times New Roman', 'serif'; 
+    font-size: 25px;
+    text-align: center;
+}
+
+h3{
+    /*Set font size*/
+    font-size: 18px;
+}
+
+h1, h2, h3{
+    /*Set margin */
+    margin-top: 20px;
+}
+
+.grid{
+    /*Set width, margin, border properties, background color, and grid properties */
+    width:90%;
+    margin:auto;
+    border-radius: 30px; 
+    justify-content: space-between; /* Space them horizontally to match mine */
+    background-color: rgba(11, 106, 238, 0.616);
+    display:grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 10px; /* Leave 10px between each row */
+}
+
+.grid div{
+    /* Set border properties, padding, and background color */
+    background-color: white;
+    padding:10px;
+    border:2px solid black;
+    border-radius: 30px;
+}
+
+.grid img{
+    /* Set width, margin, and display */
+    width: 90%;
+    margin:auto;
+    display:grid;
+    place-items:center;
+}
+
+
+.grid div:nth-child(3n+1) {
+    /* Set box shadow */
+    box-shadow: 10px 0px 10px blanchedalmond /* Images on the far left should have a box shadow to their right. */
+}
+
+.grid div:nth-child(3n) {
+    /* Set box shadow */
+    box-shadow: -10px 0px 10px blanchedalmond /* left */
+}
+
+.grid div:nth-child(3n+2) {
+    /* Set box shadow */
+    box-shadow: 10px 0px 10px blanchedalmond, -10px 0px 10px blanchedalmond /* both sides */
+}
+
+p + p {
+    /* Set indentation */
+    text-indent: 30px;
+}
+
+p {
+    /* Set margin */
+    margin:10px;
+}
+
+
+.grid ul li{
+    /* Set margin, line-spacing, list styling  */
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-right: 0px;
+    margin-top: 0px;
+    line-height: 1;
+    list-style-image: url(/images/sketchbook.png);
+}
+
+main{
+    margin-left:20px;
+    margin-right:20px;
+}
